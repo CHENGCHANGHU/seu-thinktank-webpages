@@ -1,0 +1,76 @@
+.right_article{
+    width: 26%;
+    padding-left: 2%;
+    /*display: inline-block;*/
+    float: left;
+    margin-top: 30px;
+}
+.right_title_border{
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+}
+.right_title{
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.right_more{
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #588ed4;
+}
+.right_more:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.right_search{
+    width: 100%;
+    text-align: left;
+}
+.right_search_input_text{
+    width: 75%;
+    height: 25px;
+    text-align: left;
+    float: left;
+}
+.right_search_button{
+    border-radius:4px;
+    color: #ffffff;
+    float: right;
+    text-align: center;
+    width: 15%;
+    height: 29px;
+    background: #588ed4;
+    padding: 0;
+    border: 0;  //自定义边框
+    outline: none;    //消除默认点击蓝色边框效果
+}
+.right_search_button:hover{
+    cursor: pointer;
+}
+.new_now{
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: #bfbfbf;
+    border-style:solid;
+    font-size: 14px;
+}
+.new_now:hover{
+    color: #f08200;
+    cursor: pointer;
+
+}
+#right_title_vue{
+    margin-top: 20px;
+    float: left;
+}

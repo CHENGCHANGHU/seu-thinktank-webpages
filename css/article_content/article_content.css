@@ -90,3 +90,14 @@ a.item_nav:hover{
     background-color: #9c1518;
     color: #ffffff;
  }
+.left_article{
+    width: 70%;
+    /*display: inline-block;*/
+    float: left;
+}
+.right_article{
+    width: 30%;
+    /*display: inline-block;*/
+    float: left;
+}
+

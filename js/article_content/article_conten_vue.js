@@ -1,7 +1,7 @@
 new Vue({
     el:'#key_words',
     data:{
-        key_words_list:[
+        key_words:[
             '中国经济',
             '美国美联储',
             '全球经济',

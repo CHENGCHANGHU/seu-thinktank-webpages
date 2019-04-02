@@ -163,11 +163,12 @@
     color: #6F6F6F;
 }
 
-.lc_titlebox span, .rc_titlebox span {
+.lc_titlebox a, .rc_titlebox a {
     cursor: pointer;
+    color: #6F6F6F;
 }
 
-.lc_titlebox span:hover, .rc_titlebox span:hover {
+.lc_titlebox a:hover, .rc_titlebox a:hover {
     color: #e30000;
 }
 

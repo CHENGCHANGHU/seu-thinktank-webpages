@@ -71,12 +71,12 @@
 
 @font-face {
     font-family: "hand-writing1";
-    src: url("../font/zhongshan.ttf");
+    src: url("../../font/zhongshan.ttf");
 }
 
 @font-face {
     font-family: "hand-writing2";
-    src: url("../font/一纸情书.ttf");
+    src: url("../../font/一纸情书.ttf");
 }
 
 .top_titles h2 span {
@@ -86,7 +86,7 @@
     /* left: 1%; */
     width: 100%;
     font-weight: normal;
-    letter-spacing: 3px;
+    letter-spacing: 2.8px;
     /* background-color: #986532; */
     color: #ddd;
     font-family: "hand-writing1";

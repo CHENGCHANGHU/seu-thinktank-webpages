@@ -99,4 +99,17 @@ window.onload = function () {
     //     spCards[i + 1].style.marginTop = _top + "px";
     //     spCards[i + 2].style.marginTop = _top + "px";
     // }
+
+
+    var logoBox = document.getElementsByClassName("partner_card");
+    var logo=[];
+
+    for(var i=0;i<logoBox.length;i++){
+        logo[i]=logoBox[i].getElementsByTagName("img")[0];
+        logo[i].style.marginTop = (Dis2Num(window.getComputedStyle(logoBox[0]).height) - logo[i].offsetHeight) / 2 + "px";
+    }
+}
+
+function Dis2Num(dis) {
+    return dis.split("px")[0];
 }

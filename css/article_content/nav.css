@@ -1,0 +1,173 @@
+.top_nav {
+    display: inline-block;
+    width: 1280px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+hr {
+    width: 100%;
+    border-width: 0;
+    height: 1px;
+    background-color: #e6e6e6;
+}
+
+.top_nav {
+    height: 120px;
+    /*line-height: 120px;*/
+    text-align: left;
+    background-color: rgb(69, 87, 59);
+}
+
+.logo_box {
+    margin-left: 45px;
+    float: left;
+    height: 100%;
+    /* background-color: rgba(234, 0, 123, 0.4); */
+}
+
+.logo {
+    /* width: 120px; */
+    height: 40%;
+    /* top: 25%; */
+    display: inline-block;
+    background-color: rgb(69, 87, 59);
+    border-radius: 50px;
+    padding: 5px 5px;
+    /* top: 20%; */
+    margin-top: 20px;
+}
+.title_box{
+    float: left;
+    width: 750px;
+    height: 100%;
+    margin-left: 100px;
+}
+.small_title_box{
+    margin-top: 5px;
+    width: 100%;
+    height: 35px;
+}
+.big_title_box{
+    width: 100%;
+    height: 90px;
+}
+.big_title_1{
+    float: left;
+    height: 90px;
+    width: 350px;
+}
+.big_title_2{
+    float: left;
+    height: 86px;
+    width: 400px;
+}
+.big_title_text_1{
+    color: #ffffff;
+    font-size: 45px;
+    letter-spacing:10px;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+}
+.big_title_text_2{
+    color: #dddddd;
+    font-size: 20px;
+    letter-spacing:3px;
+    position: absolute;
+    bottom: 0;
+    font-family: "hand-writing1";
+}
+.content_phrase{
+    float: left;
+    margin-right: 17px;
+    color: #dddddd;
+    /*margin-right: fill;*/
+}
+.subtitle_box{
+    float: left;
+    height: 87px;
+    width: 200px;
+
+}
+.subtitle_box_border{
+    position: absolute;
+    bottom: 0;
+    color: #dddddd;
+}
+.top_2{
+    margin-bottom: 10px;
+}
+.bottom_2{
+    margin-top: 10px;
+}
+@font-face {
+    font-family: "hand-writing1";
+    src: url("../../font/zhongshan.ttf");
+}
+
+@font-face {
+    font-family: "hand-writing2";
+    src: url("../../font/一纸情书.ttf");
+}
+/*.content_phrase:nth-child(1) {*/
+    /*left: 0;*/
+/*}*/
+
+/*.content_phrase:nth-child(2) {*/
+    /*left: 1.25%;*/
+/*}*/
+
+/*.content_phrase:nth-child(3) {*/
+    /*left: 2.5%;*/
+/*}*/
+
+/*.content_phrase:nth-child(4) {*/
+    /*left: 3.75%;*/
+/*}*/
+
+/*.content_phrase:nth-child(5) {*/
+    /*left: 5%;*/
+/*}*/
+
+/*.content_phrase:nth-child(6) {*/
+    /*left: 6.25%;*/
+/*}*/
+
+/*.content_phrase:nth-child(7) {*/
+    /*left: 7.5%;*/
+/*}*/
+
+/*.content_phrase:nth-child(8) {*/
+    /*left: 8.75%;*/
+/*}*/
+
+/*.content_phrase:nth-child(9) {*/
+    /*left: 10%;*/
+/*}*/
+/*.column_box {*/
+    /*left: 50px;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.item_nav {*/
+    /*display: inline-block;*/
+    /*padding-right: 10px;*/
+    /*padding-left: 10px;*/
+    /*font-size: 18px;*/
+    /*color: #ffffff;*/
+    /*!*background-color: rgb(255, 255, 255);*!*/
+/*}*/
+/*a{*/
+    /*color: black;*/
+/*}*/
+/*a.login:hover,a.signup:hover{*/
+    /*text-decoration: underline;*/
+/*}*/
+/*a.item_nav{*/
+    /*height: 100%;*/
+/*}*/
+/*a.item_nav:hover{*/
+    /*!*background-color: #f08200;*!*/
+    /*color: #f08200;*/
+/*}*/

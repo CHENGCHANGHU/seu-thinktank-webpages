@@ -59,6 +59,7 @@ div.copyright {
     top: 6%;
     box-sizing: border-box;
     padding-left: 25px;
+    text-align: left;
 }
 .copyright_label:nth-child(3n-1) {
     top: 10%;

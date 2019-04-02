@@ -9,6 +9,7 @@
     <link href="css/article_content/article_content.css" rel="stylesheet" type="text/css" />
     <link href="css/article_content/article_bottom.css" rel="stylesheet" type="text/css" />
     <link href="css/article_content/article_right.css" rel="stylesheet" type="text/css" />
+    <link href="css/article_content/nav.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="./js/article_content/article_content.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -16,28 +17,58 @@
 </head>
 
 <body>
-    <div style="width: 100%;background-color: rgb(45, 58, 38)">
+    <div style="width: 100%;background-color: rgb(69, 87, 59);">
         <nav class="top_nav">
             <div class="logo_box">
                 <img class="logo" draggable="true" src="./imgs/logo.png" title="东南大学" alt="东南大学 Southeast University" />
             </div>
-            <div class="column_box">
-                    <a class="item_nav" href="#">首页</a>
-                    <a class="item_nav" href="#">教育</a>
-                    <a class="item_nav" href="#">国际</a>
-                    <a class="item_nav" href="#">军事</a>
-                    <a class="item_nav" href="#">财经</a>
-                    <a class="item_nav" href="#">产经</a>
-                    <a class="item_nav" href="#">科技</a>
-                    <a class="item_nav" href="#">风闻</a>
-                    <a class="item_nav" href="#">视频</a>
-            </div>
+            <div class="title_box">
+                <div class="big_title_box">
+                    <div class="big_title_1">
+                        <span class="big_title_text_1">东大战略智库</span>
+                    </div>
+                    <div class="big_title_2">
+                        <span class="big_title_text_2">东南大学文化传媒与国际战略研究院</span>
+                    </div>
+                </div>
+                <div class="small_title_box">
+                    <ul>
+                        <li class="content_phrase">一带一路</li>
+                        <li class="content_phrase">国际热点</li>
+                        <li class="content_phrase">大国关系</li>
+                        <li class="content_phrase">周边安全</li>
+                        <li class="content_phrase">世界经济</li>
+                        <li class="content_phrase">国际贸易</li>
+                        <li class="content_phrase">创新发展</li>
+                        <li class="content_phrase">文化传媒</li>
+                        <li class="content_phrase">网络强国</li>
+                    </ul>
+                </div>
 
-            <!--<div class="account_box">-->
-                <!--<span><a href="#" class="login">登录</a></span>-->
-                <!--<span>/</span>-->
-                <!--<span><a href="#" class="signup">注册</a></span>-->
+            </div>
+            <!--<div class="column_box">-->
+                    <!--<a class="item_nav" href="#">首页</a>-->
+                    <!--<a class="item_nav" href="#">教育</a>-->
+                    <!--<a class="item_nav" href="#">国际</a>-->
+                    <!--<a class="item_nav" href="#">军事</a>-->
+                    <!--<a class="item_nav" href="#">财经</a>-->
+                    <!--<a class="item_nav" href="#">产经</a>-->
+                    <!--<a class="item_nav" href="#">科技</a>-->
+                    <!--<a class="item_nav" href="#">风闻</a>-->
+                    <!--<a class="item_nav" href="#">视频</a>-->
             <!--</div>-->
+            <div class="subtitle_box">
+                <div class="subtitle_box_border">
+                    <div class="top_2">
+                        <span style="margin-right: 10px">全球视野</span>
+                        <span>中国情怀</span>
+                    </div>
+                    <div class="bottom_2">
+                        <span style="margin-right: 10px">学术研究</span>
+                        <span>决策参考</span>
+                    </div>
+                </div>
+            </div>
         </nav>
     </div>
     <hr>
@@ -110,18 +141,16 @@
             </div>
             <hr style="width: 100%;height: 2px;margin-top: 20px;float: left;background-color: #588ed4">
             <div class="right_title_border">
-                <div class="right_title">一周热点</div>
+                <div class="right_title">专家学者</div>
                 <div class="right_more">更多</div>
             </div>
             <div style="width: 100%" id="right_title_vue_1">
-                <span class="new_now" v-for="title_object in title_list" >
-                    <img src="./imgs/news7.jpg" style="float:left;width: 90px;height: 60px">
-                    <div style="float: left;height: 60px;width: 232px;margin-left: 10px">
-                        <div style="position: absolute;top: 0;text-align: left;font-weight:bolder ;font-size: 16px">{{title_object.title}}</div>
-                        <div style="position: absolute;bottom: 0;text-align: left;font-size: 14px;color: #a4a4a4">{{title_object.time}}</div>
+                <div class="sp_card"  v-for="title_object in title_list">
+                    <div class="sp_img_box">
+                        <img src="./imgs/scholar.jpg" />
                     </div>
-
-                </span>
+                    <span class="spd_title">程泰宁</span>
+                </div>
             </div>
         </aside>
 

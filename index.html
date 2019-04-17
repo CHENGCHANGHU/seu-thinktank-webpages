@@ -2,66 +2,73 @@
 <html>
 
 <head>
-    <title>东大战略智库</title>
+    <title>东大战略智库v2</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/index/index.css" rel="stylesheet" type="text/css" />
     <link href="./css/index/nav.css" rel="stylesheet" type="text/css" />
     <link href="./css/index/showboard.css" rel="stylesheet" type="text/css" />
-    <link href="./css/index/content3.css" rel="stylesheet" type="text/css" />
+    <link href="./css/index/content1.css" rel="stylesheet" type="text/css" />
     <link href="./css/index/content2.css" rel="stylesheet" type="text/css" />
     <link href="./css/index/partner.css" rel="stylesheet" type="text/css" />
     <link href="./css/index/copyright.css" rel="stylesheet" type="text/css" />
 
     <link href="./imgs/seu.jpg" rel="shortcut icon" type="image/*" />
-    <!-- <base target="_blank" href="http://www.seu.edu.cn/" /> -->
 
-    <script type="text/javascript" src="./js/index/startMove3.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/index/index.js"></script>
-
+    <script type="text/javascript" src="./js/index/index1.js"></script>
+    <!-- <base target="_blank" href="http://www.seu.edu.cn/" /> -->
 </head>
 
 <body>
     <!-- 导航栏 -->
     <nav class="nav_webpage">
         <!-- 导航栏 东南大学图标 -->
-        <div class="logo_box">
-            <img class="logo" draggable="true" src="./imgs/logo.png" title="东南大学" alt="东南大学 Southeast University" />
-        </div>
-
-        <!-- 导航栏 网站主标题 -->
-        <div class="title_box">
-            <!-- 网站的标题 -->
-            <div class="top_titles">
-                <h1><span>东大战略智库</span></h1>
-                <h2><span>东南大学文化传媒与国际战略研究院</span></h2>
+        <div class="nav_container">
+            <div class="logo_box">
+                <img class="logo" draggable="true" src="./imgs/logo.png" title="东南大学" alt="东南大学 Southeast University" />
             </div>
 
-            <!-- 内容简介标题 -->
-            <div class="bottom_phrases">
-                <ul>
-                    <li class="content_phrase">一带一路</li>
-                    <li class="content_phrase">国际热点</li>
-                    <li class="content_phrase">大国关系</li>
-                    <li class="content_phrase">周边安全</li>
-                    <li class="content_phrase">世界经济</li>
-                    <li class="content_phrase">国际贸易</li>
-                    <li class="content_phrase">创新发展</li>
-                    <li class="content_phrase">文化传媒</li>
-                    <li class="content_phrase">网络强国</li>
-                </ul>
-            </div>
-        </div>
+            <!--   导航栏 网站主标题   -->
+            <div class="title_box">
+                <!-- 网站的标题 -->
+                <div class="top_titles">
+                    <h1><span>东大战略智库</span></h1>
+                    <h2><span class="tip_outer"><span class="tip_end">院</span><span
+                                class="tip_inner">东南大学文化传媒与国际战略研究</span></span></h2>
+                </div>
 
-        <!-- 网站简介标题 -->
-        <div class="subtitle_box">
-            <div class="top_2">
-                <span>全球视野</span>
-                <span>中国情怀</span>
+                <!-- 内容简介标题 -->
+                <div class="bottom_phrases">
+                    <ul class="content_phrase_box">
+                        <li class="content_phrase">一带一路</li>
+                        <li class="content_phrase">国际热点</li>
+                        <li class="content_phrase">大国关系</li>
+                        <li class="content_phrase">周边安全</li>
+                        <li class="content_phrase">世界经济</li>
+                        <li class="content_phrase">国际贸易</li>
+                        <li class="content_phrase">创新发展</li>
+                        <li class="content_phrase">文化传媒</li>
+                        <li class="content_phrase">网络强国</li>
+                    </ul>
+                </div>
             </div>
-            <div class="bottom_2">
-                <span>学术研究</span>
-                <span>决策参考</span>
+
+
+            <!-- 网站简介标题 -->
+            <div class="subtitle_box">
+                <div class="top_2">
+                    <span>全球视野</span>
+                    <span>中国情怀</span>
+                </div>
+                <div class="bottom_2">
+                    <span>学术研究</span>
+                    <span>决策参考</span>
+                </div>
+                <div class="search_box">
+                    <input type="text" placeholder="搜索" class="search_text" />
+                    <div class="search_btn_box"><img class="search_btn" src="./imgs/search1.png" /></div>
+                </div>
             </div>
         </div>
     </nav>
@@ -73,7 +80,7 @@
 
     <!-- 上部标题链接 -->
     <div class="link_title_box">
-        <ul>
+        <ul class="link_title_container">
             <li class="link_title"><a href="#">首页</a></li>
             <li class="link_title"><a href="#">智库活动</a></li>
             <li class="link_title"><a href="#">智库报告</a></li>
@@ -91,649 +98,347 @@
 
     <!-- 展示页 -->
     <article class="show_board">
-        <div class="cycle_img_box">
-            <div class="img_box">
-                <img class="_c" style="z-index:2" src="./imgs/seusenery.jpg" />
-                <img class="_c" style="z-index:0" src="./imgs/senery2.jpg" />
-                <img class="_c" style="z-index:0" src="./imgs/senery3.jpg" />
-                <img class="_c" style="z-index:0" src="./imgs/senery4.jpg" />
-                <img class="_c" style="z-index:0" src="./imgs/senery5.jpg" />
-                <img class="_c" style="z-index:0" src="./imgs/senery6.jpg" />
-                <!-- <img class="_c" style="z-index:0" src="" /> -->
+        <div class="show_board_container">
+            <div class="cycle_img_box">
+                <div class="img_box">
+                    <img class="_c" src="./imgs/seusenery.jpg" />
+                    <!-- <img class="_c" src="./imgs/senery2.jpg" />
+                <img class="_c" src="./imgs/senery3.jpg" />
+                <img class="_c" src="./imgs/senery4.jpg" />
+                <img class="_c" src="./imgs/senery5.jpg" />
+                <img class="_c" src="./imgs/senery6.jpg" /> -->
+                </div>
+                <!-- <span class="btn_left_box">&lsaquo;</span>
+                <span class="btn_right_box">&rsaquo;</span> -->
+
+                <span class="btn_left_box"><img src="./imgs/left2.png" /></span>
+                <span class="btn_right_box"><img src="./imgs/right2.png" /></span>
+                <div class="img_title">
+                    <span class="time">【2019-03-23】</span>
+                    <span class="title">杨伟国讲座实录：有人叫我“终结者”，因为我预言数字革命将带来雇佣的终结</span>
+                    <div class="bull_box">
+                        <!-- &bull; -->
+                        <!-- <span class="bull"><span></span></span> -->
+                    </div>
+                </div>
             </div>
-            <span class="btn_left_box">&lsaquo;</span>
-            <span class="btn_right_box">&rsaquo;</span>
-            <div class="img_title">
-                <span class="time">【2019-03-23】</span>
-                <span class="title">杨伟国讲座实录：有人叫我“终结者”，因为我预言数字革命将带来雇佣的终结</span>
-                <div class="bull_box">
-                    <!-- &bull; -->
-                    <span class="bull"><span class="bull_btn"></span></span>
-                    <span class="bull"><span class="bull_btn"></span></span>
-                    <span class="bull"><span class="bull_btn"></span></span>
-                    <span class="bull"><span class="bull_btn"></span></span>
-                    <span class="bull"><span class="bull_btn"></span></span>
-                    <span class="bull"><span class="bull_btn"></span></span>
+
+            <div class="qrcode_box">
+                <div class="qrcode_inner_box">
+                    <img class="qrcode_img" src="./imgs/qrcode1.jpg" />
+                    <span class="qrcode_title">人民日报微信</span>
+                </div>
+
+                <div class="qrcode_inner_box">
+                    <img class="qrcode_img" src="./imgs/qrcode2.jpg" />
+                    <span class="qrcode_title">邮件订阅</span>
                 </div>
             </div>
         </div>
-
-        <div class="qrcode_box">
-            <div class="qrcode_inner_box">
-                <img class="qrcode_img" src="./imgs/qrcode1.jpg" />
-                <span class="qrcode_title">人民日报微信</span>
-            </div>
-
-            <div class="qrcode_inner_box">
-                <img class="qrcode_img" src="./imgs/qrcode2.jpg" />
-                <span class="qrcode_title">邮件订阅</span>
-            </div>
-        </div>
-
 
     </article>
     <!-- 展示页 -->
 
     <!-- 内容页1 -->
     <div class="content1">
-        <aside class="left_sidebar">
-            <div class="left_sidebar_title_box">
-                <span class="left_sidebar_title">智库活动
-                    <span class="more"><a href="#">more>></a></span>
-                </span>
-            </div>
-            <div class="left_sidebar_card_box">
-                <div class="left_sidebar_card">
-                    <span class="sidebar_imgbox"><img src="./imgs/news2.jpg" /></span>
-                    <span class="sidebar_titlebox"><span>法国黄马甲运动愈演愈烈，愈演愈烈，愈演愈烈愈演愈烈愈演愈烈</span></span>
-                    <span class="sidebar_timebox">2019-03-23</span>
+        <div class="content1_container">
+            <aside class="left_sidebar">
+                <div class="content1_title_box">
+                    <span class="content1_title">智库活动</span>
+                    <span class="content1_more_box"><a class="more_link" href="#">更多</a></span>
                 </div>
-                <div class="left_sidebar_card">
-                    <span class="sidebar_imgbox"><img src="./imgs/news2.jpg" /></span>
-                    <span class="sidebar_titlebox"><span>法国黄马甲运动愈演愈烈，愈演愈烈，愈演愈烈愈演愈烈愈演愈烈</span></span>
-                    <span class="sidebar_timebox">2019-03-23</span>
+                <div class="left_sidebar_card_box">
+                    <!-- <div class="left_sidebar_card">
+                        <span class="sidebar_imgbox"><img src="./imgs/news12.jpg" /></span>
+                        <span class="sidebar_titlebox">法国黄马甲运动愈演愈烈，愈演愈烈，愈演愈烈愈演愈烈愈演愈烈</span>
+                        <span class="sidebar_timebox">2019-03-23</span>
+                    </div> -->
                 </div>
-                <div class="left_sidebar_card">
-                    <span class="sidebar_imgbox"><img src="./imgs/news2.jpg" /></span>
-                    <span class="sidebar_titlebox"><span>法国黄马甲运动愈演愈烈，愈演愈烈，愈演愈烈愈演愈烈愈演愈烈</span></span>
-                    <span class="sidebar_timebox">2019-03-23</span>
-                </div>
-                <div class="left_sidebar_card">
-                    <span class="sidebar_imgbox"><img src="./imgs/news2.jpg" /></span>
-                    <span class="sidebar_titlebox"><span>法国黄马甲运动愈演愈烈，愈演愈烈，愈演愈烈愈演愈烈愈演愈烈</span></span>
-                    <span class="sidebar_timebox">2019-03-23</span>
-                </div>
-                <div class="left_sidebar_card">
-                    <span class="sidebar_imgbox"><img src="./imgs/news2.jpg" /></span>
-                    <span class="sidebar_titlebox"><span>法国黄马甲运动愈演愈烈，愈演愈烈，愈演愈烈愈演愈烈愈演愈烈</span></span>
-                    <span class="sidebar_timebox">2019-03-23</span>
-                </div>
-                <div class="left_sidebar_card">
-                    <span class="sidebar_imgbox"><img src="./imgs/news2.jpg" /></span>
-                    <span class="sidebar_titlebox"><span>法国黄马甲运动愈演愈烈，愈演愈烈，愈演愈烈愈演愈烈愈演愈烈</span></span>
-                    <span class="sidebar_timebox">2019-03-23</span>
-                </div>
-            </div>
-        </aside>
+            </aside>
 
-        <aside class="left_content">
-            <div class="left_content_title_box">
-                <span class="left_content_title">媒体发表
-                    <span class="more"><a href="#">more>></a></span>
-                </span>
-            </div>
-            <div class="left_content_card_box">
-                <div class="left_content_card">
-                    <span class="lc_imgbox"><img src="./imgs/news3.jpg" /></span>
-                    <span class="label_box">
-                        <span>权利游戏</span>
-                        <span>欧洲政治</span>
-                    </span>
-                    <span class="lc_titlebox"><a target="_blank" href="./article_content.html">
-                            美国推出《中导条约》意欲何为
-                        </a></span>
-                    <span class="lc_timebox">瞭望周刊&bull;02/02&emsp;21:03</span>
+            <aside class="left_content">
+                <div class="content1_title_box">
+                    <span class="content1_title">媒体发表</span>
+                    <span class="content1_more_box"><a class="more_link" href="#">更多</a></span>
                 </div>
-                <div class="left_content_card">
-                    <span class="lc_imgbox"><img src="./imgs/news8.jpg" /></span>
-                    <span class="label_box">
-                        <span>权利游戏</span>
-                        <span>欧洲政治</span>
-                    </span>
-                    <span class="lc_titlebox"><a target="_blank" href="./article_content.html">
-                            阿富汗，走向和平不容易
-                        </a></span>
-                    <span class="lc_timebox">环球网&bull;02/21&emsp;21:03</span>
+                <div class="left_content_card_box">
+                    <!-- <div class="content_card">
+                        <span class="imgbox"><img src="./imgs/news3.jpg" /></span>
+                        <span class="label_box">
+                            <span>权利游戏</span>
+                            <span>欧洲政治</span>
+                        </span>
+                        <span class="titlebox"><span>印巴冲突，印巴冲突印巴冲突印巴冲突突突突突突突突</span></span>
+                        <span class="timebox">环球网&bull;03/23&emsp;21:03</span>
+                    </div> -->
                 </div>
-                <div class="left_content_card">
-                    <span class="lc_imgbox"><img src="./imgs/news5.jpg" /></span>
-                    <span class="label_box">
-                        <span>权利游戏</span>
-                        <span>欧洲政治</span>
-                    </span>
-                    <span class="lc_titlebox"><a target="_blank" href="./article_content.html">
-                            防范化解重大危险，我们责无旁贷
-                        </a></span>
-                    <span class="lc_timebox">东方网&bull;01/23&emsp;21:03</span>
-                </div>
-                <div class="left_content_card">
-                    <span class="lc_imgbox"><img src="./imgs/news6.jpg" /></span>
-                    <span class="label_box">
-                        <span>权利游戏</span>
-                        <span>欧洲政治</span>
-                    </span>
-                    <span class="lc_titlebox"><a target="_blank" href="./article_content.html">
-                            安倍与普京“博感情”，四岛问题能解决吗？
-                        </a></span>
-                    <span class="lc_timebox">东方网&bull;01/24&emsp;21:03</span>
-                </div>
-            </div>
-        </aside>
+            </aside>
 
-        <aside class="right_content">
-            <div class="right_content_title_box">
-                <span class="right_content_title">智库报告
-                    <span class="more"><a href="#">more>></a></span>
-                </span>
-            </div>
-            <div class="right_content_card_box">
-                <div class="right_content_card">
-                    <span class="rc_imgbox"><img src="./imgs/news3.jpg" /></span>
-                    <span class="label_box">
-                        <span>权利游戏</span>
-                        <span>欧洲政治</span>
-                    </span>
-                    <span class="rc_titlebox"><a target="_blank" href="./article_content.html">
-                            曲终人散，达沃斯论坛激起的涟漪仍未停
-                        </a></span>
-                    <span class="rc_timebox">东方网&bull;01/28&emsp;21:03</span>
+            <aside class="right_content">
+                <div class="content1_title_box">
+                    <span class="content1_title">智库报告</span>
+                    <span class="content1_more_box"><a class="more_link" href="#">更多</a></span>
                 </div>
-                <div class="right_content_card">
-                    <span class="rc_imgbox"><img src="./imgs/news4.jpg" /></span>
-                    <span class="label_box">
-                        <span>权利游戏</span>
-                        <span>欧洲政治</span>
-                    </span>
-                    <span class="rc_titlebox"><a target="_blank" href="./article_content.html">
-                            中美经贸问题越谈越近，须乘势而上
-                        </a></span>
-                    <span class="rc_timebox">东方网&bull;02/01&emsp;21:03</span>
+                <div class="right_content_card_box">
+                    <!-- <div class="content_card">
+                        <span class="imgbox"><img src="./imgs/news3.jpg" /></span>
+                        <span class="label_box">
+                            <span>权利游戏</span>
+                            <span>欧洲政治</span>
+                        </span>
+                        <span class="titlebox"><span>印巴冲突，印巴冲突印巴冲突印巴冲突突突突突突突突</span></span>
+                        <span class="timebox">环球网&bull;03/23&emsp;21:03</span>
+                    </div> -->
                 </div>
-                <div class="right_content_card">
-                    <span class="rc_imgbox"><img src="./imgs/news5.jpg" /></span>
-                    <span class="label_box">
-                        <span>权利游戏</span>
-                        <span>欧洲政治</span>
-                    </span>
-                    <span class="rc_titlebox"><a target="_blank" href="./article_content.html">
-                            美国最新发布全球互联网使用情况报告
-                        </a></span>
-                    <span class="rc_timebox">东方网&bull;02/03&emsp;21:03</span>
-                </div>
-                <div class="right_content_card">
-                    <span class="rc_imgbox"><img src="./imgs/news6.jpg" /></span>
-                    <span class="label_box">
-                        <span>权利游戏</span>
-                        <span>欧洲政治</span>
-                    </span>
-                    <span class="rc_titlebox"><a target="_blank" href="./article_content.html">
-                            欧洲不买账，美欧矛盾有多深？
-                        </a></span>
-                    <span class="rc_timebox">东方网&bull;02/18&emsp;21:03</span>
-                </div>
-            </div>
-        </aside>
+            </aside>
+        </div>
     </div>
     <!-- 内容页1 -->
 
     <!-- 内容页2 -->
     <div class="content2">
+        <div class="content2_container">
+            <div class="n_scholars_box">
+                <!-- 智能媒体 -->
+                <div class="intelligent_media_box">
+                    <div class="content2_title">智能媒体</div>
+                    <div class="mediaAI_lab_box">
+                        <div class="ma_title_box">
+                            <span>东南大学全媒体智能化实验室</span>
+                        </div>
+                        <div class="ma_imgs_box">
+                            <img src="./imgs/seugate.jpg" />
+                        </div>
 
-        <!-- 智能媒体 -->
-        <div class="intelligent_media_box">
-            <div class="im_title_box">智能媒体</div>
-            <div class="joint_lab_box">
-                <div class="jl_title_box">
-                    <span>东南大学全媒体智能化实验室</span>
-                </div>
-                <div class="jl_imgs_box">
-                    <img src="./imgs/seugate.jpg" />
-                </div>
-
-                <div class="jl_imgs_box">
-                    <img src="./imgs/senery4.jpg" />
-                </div>
-            </div>
-        </div>
-
-        <!-- 技术产品应用 -->
-        <div class="tech_pro_app_box">
-            <div class="tpa_title_box">技术
-                <span class="slash_span">/</span>产品
-                <span class="slash_span">/</span>应用
-            </div>
-            <div class="tiny_link_title_box">
-                <!-- <ul>
-                    <li class="tiny_title">概述</li>
-                    <li class="tiny_title">解决方案</li>
-                    <li class="tiny_title">产品</li>
-                    <li class="tiny_title">行业应用</li>
-                    <li class="tiny_title">成功案例</li>
-                </ul> -->
-
-                <span class="tiny_title">概述</span>
-                <span class="tiny_title">解决方案</span>
-                <span class="tiny_title">产品</span>
-                <span class="tiny_title">行业应用</span>
-                <span class="tiny_title">成功案例</span>
-
-                <!-- <span class="tiny_title"><a class="tiny_link" href="#">概述</a></span>
-                <span class="tiny_title"><a class="tiny_link" href="#">解决方案</a></span>
-                <span class="tiny_title"><a class="tiny_link" href="#">产品</a></span>
-                <span class="tiny_title"><a class="tiny_link" href="#">行业应用</a></span>
-                <span class="tiny_title"><a class="tiny_link" href="#">成功案例</a></span> -->
-
-            </div>
-
-            <div class="breif_intro_box">
-                <div class="breif_intro_card">
-                    <div class="bi_title">智能新闻采编系统</div>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
+                        <div class="ma_imgs_box">
+                            <img src="./imgs/senery6.jpg" />
+                        </div>
+                    </div>
                 </div>
 
-                <div class="breif_intro_card">
-                    <div class="bi_title">智能新闻采编系统</div>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
+                <!-- 技术产品应用 -->
+                <div class="tech_pro_app_box">
+                    <div class="content2_title">技术
+                        <span class="slash_span">/</span>产品
+                        <span class="slash_span">/</span>应用
+                    </div>
+                    <div class="tiny_link_title_box">
+                        <span class="tiny_title">概述</span>
+                        <span class="tiny_title">解决方案</span>
+                        <span class="tiny_title">产品</span>
+                        <span class="tiny_title">行业应用</span>
+                        <span class="tiny_title">成功案例</span>
+                    </div>
+
+                    <div class="breif_intro_box">
+                        <!-- <div class="breif_intro_card">
+                            <div class="bi_title">智能新闻采编系统</div>
+                            <span class="bi_sentence">床前明月光，疑是地上霜</span>
+                            <span class="bi_sentence">床前明月光，疑是地上霜</span>
+                            <span class="bi_sentence">床前明月光，疑是地上霜</span>
+                            <span class="bi_sentence">床前明月光，疑是地上霜</span>
+                            <span class="bi_sentence">床前明月光，疑是地上霜</span>
+                        </div> -->
+                    </div>
+
+                    <div class="min_solution_card">
+                        <div class="msc_img_box">
+                            <img src="./imgs/s1.png" />
+                        </div>
+                        <div class="msc_title_box">SD-WAN解决方案</div>
+                        <div class="msc_intro_para_box"></div>
+                        <div class="msc_bi_box">
+                            <!-- <span class="msc_bi_line">                                
+                                <span class="msc_rarr"><img src="./imgs/rarr1.png" /></span>
+                                <span class="msc_bi">床前明月光，疑是地上霜霜霜</span>
+                            </span> -->
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="breif_intro_card">
-                    <div class="bi_title">智能新闻采编系统</div>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
-                    <span class="bi_sentence">床前明月光，疑是地上霜</span>
+                <div class="solution1">
+                    <div class="normal_solution_card">
+                        <div class="nsc_img_box">
+                            <img src="./imgs/s2.png" />
+                        </div>
+                        <div class="nsc_title_box">SD-WAN解决方案</div>
+                        <div class="nsc_intro_para_box">上个月，建筑师程泰宁和学生们欢聚一堂，共同度过了自己的83周岁生日。他说，和学生
+                            们在一起，是他最开心、最放松的时光。 “学生们都成家立业了，分散在各地。“学生们都成家立业了，分散在各地,“
+                            学生们都成家立业了，分散在各地
+                        </div>
+                        <div class="nsc_bi_box">
+                            <!-- <span class="nsc_bi_line">
+                                <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
+                                <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
+                            </span> -->
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="min_solution_card">
-                <div class="msc_img_box">
-                    <img src="./imgs/s1.png" />
+                <div class="solution2">
+                    <div class="normal_solution_card">
+                        <div class="nsc_img_box">
+                            <img src="./imgs/s3.png" />
+                        </div>
+                        <div class="nsc_title_box">SD-WAN解决方案</div>
+                        <div class="nsc_intro_para_box">上个月，建筑师程泰宁和学生们欢聚一堂，共同度过了自己的83周岁生日。他说，和学生
+                            们在一起，是他最开心、最放松的时光。 “学生们都成家立业了，分散在各地。“学生们都成家立业了，分散在各地,“
+                            学生们都成家立业了，分散在各地
+                        </div>
+                        <div class="nsc_bi_box">
+                            <!-- <span class="nsc_bi_line">
+                                <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
+                                <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
+                            </span> -->
+                        </div>
+                    </div>
                 </div>
-                <div class="msc_title_box">SD-WAN解决方案</div>
-                <div class="msc_intro_para_box">上个月，建筑师程泰宁和学生们欢聚一堂，共同度过了自己的83周岁生日。他说，和学生
-                    们在一起，是他最开心、最放松的时光。 “学生们都成家立业了，分散在各地。
-                </div>
-                <div class="msc_bi_box">
-                    <span class="msc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="msc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="msc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
 
-                    <span class="msc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="msc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="msc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-
-                    <span class="msc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="msc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="msc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-
-                    <span class="msc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="msc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="msc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-                </div>
             </div>
 
-        </div>
-
-
-        <!-- 专家学者 -->
-        <div class="scholars_box">
-            <div class="s_title_box">专家学者
-                <span class="more"><a href="#">more>></a></span>
-            </div>
-            <div class="sp_box">
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
+            <!-- 专家学者 -->
+            <div class="scholars_box">
+                <div class="content2_title">专家学者
+                    <span class="content1_more_box"><a class="more_link" href="#">更多</a></span>
                 </div>
 
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
-                </div>
-                <div class="sp_card">
-                    <div class="sp_img_box">
-                        <img src="./imgs/scholar.jpg" />
-                    </div>
-                    <span class="sp_title">程泰宁</span>
+                <div class="sp_box">
+                    <!-- <div class="sp_card">
+                        <div class="sp_img_box">
+                            <img src="./imgs/scholar.jpg" />
+                        </div>
+                        <span class="sp_title">程泰宁</span>
+                    </div> -->
                 </div>
             </div>
-        </div>
 
-        <div class="solution1">
-            <div class="normal_solution_card">
-                <div class="nsc_img_box">
-                    <img src="./imgs/s2.png" />
-                </div>
-                <div class="nsc_title_box">SD-WAN解决方案</div>
-                <div class="nsc_intro_para_box">上个月，建筑师程泰宁和学生们欢聚一堂，共同度过了自己的83周岁生日。他说，和学生
-                    们在一起，是他最开心、最放松的时光。 “学生们都成家立业了，分散在各地。“学生们都成家立业了，分散在各地,“
-                    学生们都成家立业了，分散在各地
-                </div>
-                <div class="nsc_bi_box">
-                    <span class="nsc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
 
-                    <span class="nsc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-
-                    <span class="nsc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-
-                    <span class="nsc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="solution2">
-            <div class="normal_solution_card">
-                <div class="nsc_img_box">
-                    <img src="./imgs/s3.png" />
-                </div>
-                <div class="nsc_title_box">SD-WAN解决方案</div>
-                <div class="nsc_intro_para_box">上个月，建筑师程泰宁和学生们欢聚一堂，共同度过了自己的83周岁生日。他说，和学生
-                    们在一起，是他最开心、最放松的时光。 “学生们都成家立业了，分散在各地。“学生们都成家立业了，分散在各地,“
-                    学生们都成家立业了，分散在各地
-                </div>
-                <div class="nsc_bi_box">
-                    <span class="nsc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-
-                    <span class="nsc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-
-                    <span class="nsc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-
-                    <span class="nsc_bi_line">
-                        <!-- <span class="msc_rarr">&rarr;</span> -->
-                        <span class="nsc_rarr"><img src="./imgs/rarr1.png" /></span>
-                        <span class="nsc_bi">床前明月光，疑是地上霜霜霜</span>
-                    </span>
-                </div>
-            </div>
         </div>
     </div>
     <!-- 内容页2 -->
 
     <!-- 伙伴页3 -->
     <div class="partners">
-        <div class="partner_title_box">
-            合作伙伴
-        </div>
-        <div class="partner_branch_box">
+        <div class="partners_container">
 
-            <div class="partner_card">
-                <a target="_blank" href="http://www.china.com.cn/">
-                    <img src="./imgs/zhongguowang.jpg" />
-                </a>
+            <div class="partner_title_box">
+                合作伙伴
             </div>
-            <div class="partner_card">
-                <img src="./imgs/guojizaixian.png" />
-            </div>
-            <div class="partner_card">
-                <img src="./imgs/guojiaguangbodianshi.png" />
-            </div>
-            <!-- <br> -->
-            <!--  -->
-            <div class="partner_card">
-                <img src="./imgs/dongfangwang.jpg" />
-            </div>
-            <div class="partner_card">
-                <img src="./imgs/zhongguojiangsuwang.jpg" />
-            </div>
-            <div class="partner_card">
-                <img src="./imgs/zijinchuanmei.jpg" />
-            </div>
-            <div class="partner_card">
-                <img src="./imgs/beijdaxuexinmeiti.jpg" />
-            </div>
+            <div class="partner_branch_box">
+                <div class="prow1">
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/zhongguowang.jpg" />
+                        </a>
+                    </div>
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/guojizaixian.png" />
+                        </a>
 
-            <div class="partner_card">
-                <img src="./imgs/fudan.png" />
-            </div>
-            <!-- <div class="partner_card">
-                <img src="./imgs/zhguorenmdaxue.jpg" />
-            </div> -->
-            <div class="partner_card">
-                <img src="./imgs/liaowzhiku.png" />
-            </div>
+                    </div>
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/guojiaguangbodianshi.png" />
+                        </a>
 
-            <div class="partner_card">
-                <img src="./imgs/changchengzaixian.jpg" />
-            </div>
-            <div class="partner_card">
-                <img src="./imgs/dahewang.png" />
-            </div>
+                    </div>
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/dongfangwang.jpg" />
+                        </a>
 
-            <div class="partner_card">
-                <img src="./imgs/zhongyuan.jpg" />
-            </div>
+                    </div>
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/zhongguojiangsuwang.jpg" />
+                        </a>
 
-            <div class="partner_card">
-                <img src="./imgs/qutoutiao.jpg" />
-            </div>
-
-
-        </div>
-        <div class="contact_box">
-            <div class="contact_card">
-                <div class="fi_box">
-                    <img src="./imgs/mess1.png" />
+                    </div>
                 </div>
 
-                <span class="fi_title">业务咨询</span>
-            </div>
+                <div class="prow2">
+                    <div class="partner_card transparent">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/zijinchuanmei.jpg" />
+                        </a>
 
-            <div class="contact_card">
-                <div class="fi_box">
-                    <img src="./imgs/contact1.png" />
+                    </div>
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/beijdaxuexinmeiti.jpg" />
+                        </a>
+
+                    </div>
+
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/fudan.png" />
+                        </a>
+
+                    </div>
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/liaowzhiku.png" />
+                        </a>
+
+                    </div>
                 </div>
 
-                <span class="fi_title">客服电话</span>
-            </div>
+                <div class="prow3">
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/changchengzaixian.jpg" />
+                        </a>
 
-            <div class="contact_card">
-                <div class="fi_box">
-                    <img src="./imgs/employ.png" />
+                    </div>
+                    <div class="partner_card transparent">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/dahewang.png" />
+                        </a>
+
+                    </div>
+
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/zhongyuan.jpg" />
+                        </a>
+
+                    </div>
+
+                    <div class="partner_card">
+                        <a target="_blank" href="http://www.china.com.cn/">
+                            <img src="./imgs/qutoutiao.jpg" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="contact_box">
+                <div class="contact_card">
+                    <div class="fi_box">
+                        <img src="./imgs/mess1.png" />
+                    </div>
+
+                    <span class="fi_title">业务咨询</span>
                 </div>
 
-                <span class="fi_title">招贤纳士</span>
+                <div class="contact_card">
+                    <div class="fi_box">
+                        <img src="./imgs/contact1.png" />
+                    </div>
+
+                    <span class="fi_title">客服电话</span>
+                </div>
+
+                <div class="contact_card">
+                    <div class="fi_box">
+                        <img src="./imgs/employ.png" />
+                    </div>
+
+                    <span class="fi_title">招贤纳士</span>
+                </div>
             </div>
         </div>
     </div>
@@ -741,52 +446,53 @@
 
     <!-- 版权页1 -->
     <div class="copyright">
-        <div class="col1_box">
-            <span class="copyright_label">
-                Copyright &copy; Southeast University E-mail:master@seu.edu.cn
-            </span>
-            <span class="copyright_label">
-                苏ICP备10088665号
-            </span>
-            <span class="copyright_label">
-                公安备案号：32010202010062
-            </span>
-        </div>
-
-        <div class="col2_box">
-            <span class="copyright_label">
-                东南大学文化传媒研究院
-            </span>
-            <span class="copyright_label">
-                南京市玄武区、南京市江宁区东南大学路、南京市鼓楼区湖南路
-            </span>
-            <span class="copyright_label">
-                联系：(025)83795903、13912970636（王）
-            </span>
-        </div>
-
-        <div class="col3_box">
-            <span class="copyright_label">
-                <!-- 东南大学、朗坤智慧联合实验室 -->
-            </span>
-            <span class="copyright_label">
-                <!-- 江苏省南京市雨花台区宁双路 软件谷云密城 -->
-            </span>
-            <span class="copyright_label">
-                <!-- 联系：(025)83795903、13912970636（王） -->
-            </span>
-        </div>
-
-        <div class="forward_box">
-            <div class="icon_box">
-                <img src="./imgs/blog.png" />
+        <div class="copyright_container">
+            <div class="col1_box">
+                <span class="copyright_label">
+                    Copyright &copy; Southeast University E-mail:master@seu.edu.cn
+                </span>
+                <span class="copyright_label">
+                    苏ICP备10088665号
+                </span>
+                <span class="copyright_label">
+                    公安备案号：32010202010062
+                </span>
             </div>
 
-            <div class="icon_box">
-                <img src="./imgs/wechat.png" />
+            <div class="col2_box">
+                <span class="copyright_label">
+                    东南大学文化传媒研究院
+                </span>
+                <span class="copyright_label">
+                    南京市玄武区、南京市江宁区东南大学路、南京市鼓楼区湖南路
+                </span>
+                <span class="copyright_label">
+                    联系：(025)83795903、13912970636（王）
+                </span>
+            </div>
+
+            <div class="col3_box">
+                <span class="copyright_label">
+                    东南大学文化传媒与国际战略研究院
+                </span>
+                <span class="copyright_label">
+                    江苏省南京市东南大学
+                </span>
+                <span class="copyright_label">
+                    联系：(025)83795903、13912970636（王）
+                </span>
+            </div>
+
+            <div class="forward_box">
+                <div class="icon_box">
+                    <img src="./imgs/blog.png" />
+                </div>
+
+                <div class="icon_box">
+                    <img src="./imgs/wechat.png" />
+                </div>
             </div>
         </div>
-
     </div>
     <!-- 版权页1 -->
 

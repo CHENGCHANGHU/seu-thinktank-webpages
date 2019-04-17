@@ -1,72 +1,63 @@
-.logo_box, .title_box, .subtitle_box {
-    /* display: inline-block; */
-    float: left;
-    /* position: relative; */
+.nav_container {
+    display: inline-block;
+    width: 1200px;
+    height: 100px;
+    /* background-color: rgba(123, 123, 0, 0.4); */
+    box-sizing: border-box;
 }
 
-/* 东南大学校徽 */
+.nav_container * {
+    float: left;
+}
 
 .logo_box {
-    width: 15%;
-    height: 100%;
-    left: 10%;
-    top: 0%;
-    /* background-color: red; */
+    width: 20%;
+    height: 80%;
+    top: 10%;
+    /* background-color: rgba(123, 67, 123, 0.4); */
+    vertical-align: middle;
+    margin: auto 0;
 }
 
 .logo {
-    display: inline-block;
-    height: 40%;
-    top: 30%;
-    cursor: pointer;
+    width: 70%;
+    height: 70%;
+    /* left: 10%; */
+    top: 15%;
 }
-
-/* 网站标题 */
 
 .title_box {
-    width: 50%;
+    width: 60%;
     height: 100%;
-    left: 12%;
-    top: 0%;
-    /* background-color: #555566; */
+    /* background-color: rgba(34, 123, 67, 0.4); */
 }
 
-.title_box .top_titles {
+.top_titles {
+    height: 70%;
     width: 100%;
-    height: 60%;
-    top: 10%;
-    /* background-color: #785643; */
-}
-
-.top_titles h1, .top_titles h2 {
-    float: left;
+    /* background-color: rgba(145, 234, 12, 0.4); */
 }
 
 .top_titles h1 {
+    /* background-color: rgba(200, 0, 200, 0.4); */
+    display: inline-block;
     height: 100%;
-    width: 48%;
-    text-align: center;
+    width: 45%;
     color: #eee;
-    font-size: 36pt;
-    font-weight: normal;
-    /* background-color: #127845; */
+    line-height: 91px;
 }
 
 .top_titles h1 span {
-    display: inline-block;
-    width: 100%;
-    height: 80%;
-    top: 20%;
-    letter-spacing: 10px;
-    /* background-color: #657812; */
-    text-align: left;
+    font-size: 36pt;
+    letter-spacing: 6px;
 }
 
 .top_titles h2 {
+    /* background-color: rgba(200, 200, 0, 0.4); */
+    display: inline-block;
     height: 100%;
-    width: 52%;
-    font-size: 14pt;
-    /* background-color: #63ad88; */
+    width: 55%;
+    color: #eee;
 }
 
 @font-face {
@@ -74,123 +65,116 @@
     src: url("../../font/zhongshan.ttf");
 }
 
-@font-face {
-    font-family: "hand-writing2";
-    src: url("../../font/一纸情书.ttf");
-}
-
-.top_titles h2 span {
-    display: inline-block;
-    height: 40%;
-    top: 60%;
-    /* left: 1%; */
-    width: 100%;
-    font-weight: normal;
-    letter-spacing: 2.8px;
-    /* background-color: #986532; */
-    color: #ddd;
+.tip_outer, .tip_inner, .tip_end {
     font-family: "hand-writing1";
     font-size: 16pt;
+    text-align: right;
+    line-height: 124px;
 }
 
-.title_box .bottom_phrases {
+.tip_outer {
     width: 100%;
-    height: 20%;
-    top: 10%;
-    /* background-color: #221470; */
+    text-align: right;
 }
 
-.bottom_phrases ul {
+.tip_inner {
+    float: right;
+    letter-spacing: 2px;
+}
+
+.tip_end {
+    float: right;
+}
+
+.bottom_phrases {
+    width: 100%;
+    height: 30%;
+    /* background-color: rgba(12, 45, 67, 0.4); */
+    line-height: 30px;
+}
+
+.content_phrase_box {
     width: 100%;
     height: 100%;
 }
 
-.bottom_phrases ul li {
-    float: left;
-    width: 10%;
-    height: 100%;
-    /* background-color: #666123;     */
-    box-sizing: border-box;
+.content_phrase {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 2px;
     color: #aaa;
-    letter-spacing: 1.6px;
-    font-size: 10.5pt;
-    padding: 2px;
-    cursor: pointer;
+    /* background-color: rgba(67, 123, 98, 0.4); */
 }
-
-.content_phrase:nth-child(1) {
-    left: 0%;
-}
-
-.content_phrase:nth-child(2) {
-    left: 1.25%;
-}
-
-.content_phrase:nth-child(3) {
-    left: 2.5%;
-}
-
-.content_phrase:nth-child(4) {
-    left: 3.75%;
-}
-
-.content_phrase:nth-child(5) {
-    left: 5%;
-}
-
-.content_phrase:nth-child(6) {
-    left: 6.25%;
-}
-
-.content_phrase:nth-child(7) {
-    left: 7.5%;
-}
-
-.content_phrase:nth-child(8) {
-    left: 8.75%;
-}
-
-.content_phrase:nth-child(9) {
-    left: 10%;
-}
-
-/* 网站简介框 */
 
 .subtitle_box {
-    width: 11%;
+    width: 20%;
     height: 100%;
-    left: 14%;
-    top: 0%;
-    /* color: rgb(126, 93, 0); */
-    color: #d1d1d1;
-    font-weight: bold;
-    font-size: 12pt;
-    /* background-color: #08086b; */
+    /* background-color: rgba(45, 255, 67, 0.4); */
 }
 
-.subtitle_box .top_2, .subtitle_box .bottom_2 {
-    width: 100%;
-    height: 30px;
+.top_2, .bottom_2 {
     line-height: 30px;
-    text-align: center;
-}
-
-.top_2 {
-    /* background-color: #35aa3a; */
-    top: 25%;
-}
-
-.top_2 span {
-    float: left;
-    width: 50%;
+    width: 80%;
+    left: 10%;
+    top: 2.5%;
+    height: 30%;
+    /* background-color: rgba(87, 12, 98, 0.4); */
 }
 
 .bottom_2 {
-    /* background-color: #ce6d1e; */
-    top: 25%;
+    top: 5%;
+    /* background-color: rgba(87, 12, 198, 0.4); */
 }
 
-.bottom_2 span {
-    float: left;
+.top_2 span, .bottom_2 span {
     width: 50%;
+    display: inline-block;
+    height: 100%;
+    /* background-color: rgba(123, 56, 198, 0.4); */
+    text-align: center;
+    font-weight: bold;
+    font-size: 11pt;
+    color: #ddd;
+    letter-spacing: 1px;
+}
+
+.search_box {
+    width: 80%;
+    height: 30%;
+    top: 7.5%;
+    left: 10%;
+    /* background-color: rgba(87, 12, 98, 0.4); */
+}
+
+.search_text {
+    border-width: 0;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 10pt;
+    padding-left: 10px;
+}
+
+.search_btn_box {
+    display: inline-block;
+    height: 71%;
+    top:14.5%;
+    background-color: rgba(33, 34, 128, 0.4);
+    /* border-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.search_btn {
+    width: 15px;
+    height: 15px;
+    margin: 3px;
+    margin-left: 12px;
+    margin-right: 12px;
+    display: inline-block;
 }

@@ -1,18 +1,13 @@
-/* ::selection{
-	background: rgba(0,0,0,0);
-} */
-
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     position: relative;
-}
-
-html, body, ul, ol, li {
-    margin: 0;
-    padding: 0;
+    /* float: left; */
     font-family: "微软雅黑";
+    font-size: 12pt;
+    font-weight: normal;
+    /* font-size: 0; */
+    /* -webkit-text-size-adjust: none; */
 }
 
 li, a {
@@ -20,88 +15,68 @@ li, a {
     list-style-type: none;
 }
 
-nav, aside, article, footer {
-    float: left;
-}
-
 html {
-    height: 500%;
+    font-size: 0;
     width: 100%;
-    background-color: rgb(240, 247, 252);
-    /* position: relative; */
+    background-color: rgb(236, 246, 253);
+    box-sizing: border-box;
+    padding: 0;
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    /* position: relative; */
-    clear: both;
-}
-
-nav.nav_webpage {
-    height: 3.3%;
-    width: 100%;
-    background-color: rgb(69, 87, 59);
     display: inline-block;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
-hr.split_line {
+.nav_webpage, .copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(69, 87, 59);
+    font-size: 0px;
+}
+
+.split_line {
+    width: 1200px;
+    background-color: rgba(125, 0, 0, 0.4);
+}
+
+.split_line {
     height: 0.2%;
     top: 0.1%;
     border: 0px solid #eee;
-    width: 80%;
-    left: 10%;
+    width: 60%;
+    left: 20%;
     background-color: rgb(179, 229, 245);
 }
 
-article.show_board {
-    top: 0.1%;
-    height: 15.5%;
-    width: 92%;
-    left: 5%;
-    /* background-color: red; */
-    position: relative;
-}
-
-div.content1 {
-    float: left;
-    position: relative;
-    width: 80%;
-    height: 40%;
-    left: 10%;
-    top: 1%;
-    /* background-color: red; */
-}
-
-div.content2 {
-    display: block;
-    float: left;
-    position: relative;
-    width: 80%;
-    height: 30%;
-    left: 10%;
-    top: 2%;
-    /* background-color: rgb(62, 21, 158); */
-}
-
-div.partners {
-    display: block;
-    /* float: left; */
-    position: absolute;
-    width: 80%;
-    height: 9%;
-    left: 10%;
-    top: 93%;
-    /* background-color: rgb(114, 88, 173); */
-}
-
-div.copyright {
-    display: block;
-    position: absolute;
+.link_title_box {
     width: 100%;
-    height: 100px;
-    top: 103%;
+    height: 30px;
+    /* background-color: rgba(0, 0, 255, 0.4) */
+}
+
+.show_board {
+    display: inline-block;
+    width: 100%;
+}
+
+.content1, .content2 ，.partners {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.content2 {
+    margin-top: 30px;
+}
+
+.partners {
+    margin-top: 30px;
+}
+
+.copyright {
+    margin-top: 30px;
     background-color: rgb(34, 44, 29);
-    color: #eee;
-    font-size: 10pt;
 }

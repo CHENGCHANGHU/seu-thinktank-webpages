@@ -1,115 +1,199 @@
-window.onload = function () {
+$(
+    function () {
+        console.log(window.screen.width);
+        console.log(document.body.clientWidth);
+        console.log(document.body.offsetWidth);
+        console.log(window.screen.availWidth);
 
-    var imgs = document.getElementsByClassName("_c");
-    var bulls = document.getElementsByClassName("bull_btn");
-    console.log(bulls.length);
+        // $(".nav_container").css("margin-left", (document.body.clientWidth - 1200) / 2 + "px");
 
-    var now = 0;
+        //logo垂直设置
+        $(".logo_box").css("margin-top", (80 - $(".nav_container").offsetHeight) / 2 + "px");
 
-    for (var i = 0; i < bulls.length; i++) {
-        bulls[i].index = i;
-        imgs[i].style.opacity = 0;
-        bulls[i].onclick = function () {
-            console.log(this.index);
-
-            tab(this.index);
-            // now = this.index;
+        //文字左右对齐
+        console.log($(".content_phrase").length);
+        var boxWidth = $(".content_phrase_box").get(0).offsetWidth;
+        // console.log(boxWidth);
+        var itemWidth = $(".content_phrase").get(0).offsetWidth;
+        // console.log(itemWidth);
+        var mr = (boxWidth - itemWidth * 9) / 8;
+        // console.log(mr);
+        for (var i = 0; i < $(".content_phrase").length - 1; i++) {
+            // console.log(i);
+            $(".content_phrase:nth-child(" + (i + 1) + ")").css("margin-right", mr + "px");
         }
-        startMove(imgs[now], { 'opacity': 100 });
 
-        bulls[i].onmouseover = function () {
-            if (this.index == now) return;
-            this.style.background = "#A91D20";
-            this.style.opacity = 60;
+        //搜索框的对齐
+        console.log($(".search_box").get(0).offsetWidth);
+        console.log($(".search_btn_box").get(0).offsetWidth);
+        console.log($(".search_btn").get(0).offsetWidth);
+        $(".search_text").css("width",
+            $(".search_box").get(0).offsetWidth - $(".search_btn_box").get(0).offsetWidth + "px");
+        // $(".search_text").css("width", "40px");
+
+        // var bullsHtml = "";
+        // for (var i = 0; i < 6; i++) {
+        //     // $(".bull").append("<span class=\"bull\"><span></span></span>");
+        //     bullsHtml += "<span class=\"bull\"><span></span></span>";
+        // }
+        // $(".bull_box").html(bullsHtml);
+
+        
+
+        console.log(Math.random());
+
+        for (var i = 0; i < 6; i++) {
+            $(".left_sidebar_card_box").append(
+                "<div class=\"left_sidebar_card\">" +
+                "<span class=\"sidebar_imgbox\"><img src=\"./imgs/news" +
+                (Math.floor(Math.random() * 14 + 1)) +
+                ".jpg\" /></span>" +
+                "<span class=\"sidebar_titlebox\">法国黄马甲运动愈演愈烈，愈演愈烈，愈演愈烈愈演愈烈愈演愈烈</span>" +
+                "<span class=\"sidebar_timebox\">2019-03-23</span>" +
+                "</div>"
+            );
         }
 
-        bulls[i].onmouseout = function () {
-            if (this.index == now) return;
-            this.style.background = "#E3F3FB";
-            this.style.opacity = 100;
+        console.log($(".left_sidebar").text());
+        console.log($(".left_sidebar").outerWidth());
+        console.log($(".left_sidebar").outerHeight());
+
+
+        $(".left_content").css("height", $(".left_sidebar").outerHeight() + "px");
+        $(".right_content").css("height", $(".left_sidebar").outerHeight() + "px");
+
+        console.log(($(".left_sidebar").outerHeight() - 40));
+        $(".left_content_card_box").css("height", ($(".left_sidebar").outerHeight() - 40) + "px");
+        console.log(($(".left_sidebar").outerHeight() - 40) / 4);
+        $(".content_card").css("height", ($(".left_sidebar").outerHeight() - 40) / 4 + "px");
+        // $(".right_content_card").css("height", ($(".left_sidebar").outerHeight() - 40) / 4 + "px");
+
+        console.log($(".content_card").eq(0).innerWidth());
+        console.log($(".content_card").eq(0).innerHeight());
+        console.log($(".content_card").eq(0).height());
+
+        for (var i = 0; i < 4; i++) {
+            $(".left_content_card_box").eq(0).append(
+                "<div class=\"content_card\">" +
+                "<span class=\"imgbox\"><img src=\"./imgs/news" +
+                (Math.floor(Math.random() * 14 + 1)) +
+                ".jpg\" /></span>" +
+                "<span class=\"label_box\"><span>权利游戏</span><span>欧洲政治</span></span>" +
+                "<span class=\"titlebox\"><span>安倍与普京“博感情”，四岛问题能解决吗？</span></span>" +
+                "<span class=\"timebox\">环球网&bull;03/23&emsp;21:03</span></div>"
+            );
         }
-    }
 
-    imgs[0].style.opacity = 100;
-    bulls[0].style.background = "#A91D20";
-
-    function clear(x) {
-        for (var i = 0; i < bulls.length; i++) {
-            bulls[i].style.background = "#E3F3FB";
+        for (var i = 0; i < 4; i++) {
+            $(".right_content_card_box").eq(0).append(
+                "<div class=\"content_card\">" +
+                "<span class=\"imgbox\"><img src=\"./imgs/news" +
+                (Math.floor(Math.random() * 14 + 1)) +
+                ".jpg\" /></span>" +
+                "<span class=\"label_box\"><span>权利游戏</span><span>欧洲政治</span></span>" +
+                "<span class=\"titlebox\"><span>安倍与普京“博感情”，四岛问题能解决吗？</span></span>" +
+                "<span class=\"timebox\">环球网&bull;03/23&emsp;21:03</span></div>"
+            );
         }
-        bulls[x].style.background = "#A91D20";
-    }
 
-    function tab(x) {
-        if (x == now) return;
-        console.log(x);
-        // imgs[now].style.zIndex = 0;
-        // imgs[x].style.zIndex = 2;
-        // imgs[x].style.opacity = 0;
-        startMove(imgs[x], { 'opacity': 100 });
-        startMove(imgs[now], { 'opacity': 0 });
-        // imgs[now].style.zIndex = 0;
-        imgs[now].style.opacity = 0;
-        now = x;
-        clear(now);
-    }
-
-    var btn_left = document.getElementsByClassName("btn_left_box")[0];
-    var btn_right = document.getElementsByClassName("btn_right_box")[0];
-
-    btn_left.onclick = function () {
-        if (now == 0) {
-            tab(imgs.length - 1);
-        } else {
-            tab(now - 1);
+        for (var i = 0; i < 3; i++) {
+            $(".breif_intro_box").eq(0).append(
+                "<div class=\"breif_intro_card\">" +
+                "<div class=\"bi_title\">智能新闻采编系统" + i + "</div>" +
+                "<span class=\"bi_sentence\">床前明月光，疑是地上霜</span>" +
+                "<span class=\"bi_sentence\">床前明月光，疑是地上霜</span>" +
+                "<span class=\"bi_sentence\">床前明月光，疑是地上霜</span>" +
+                "<span class=\"bi_sentence\">床前明月光，疑是地上霜</span>" +
+                "<span class=\"bi_sentence\">床前明月光，疑是地上霜</span>" +
+                "</div>"
+            );
         }
-    }
 
-    btn_right.onclick = function () {
-        if (now == imgs.length - 1) {
-            tab(0);
-        } else {
-            tab(now + 1);
+        $(".min_solution_card").eq(0).css("height", $(".breif_intro_box").eq(0).outerHeight() + "px");
+        $(".min_solution_card").eq(0).css("width",
+            $(".tech_pro_app_box").eq(0).width() - $(".bi_sentence").eq(0).outerWidth() + "px");
+
+        console.log($(".tech_pro_app_box").eq(0).outerHeight());
+        console.log($(".intelligent_media_box").eq(0).outerHeight());
+
+        $(".ma_imgs_box").eq(0).css("margin",
+            "0 0 " + ($(".tech_pro_app_box").eq(0).outerHeight() - $(".intelligent_media_box").eq(0).outerHeight()) / 2 + "px 0");
+
+
+        $(".msc_intro_para_box").eq(0).text(
+            "上个月，建筑师程泰宁和学生们欢聚一堂，共同度过了自己的83周岁生日。他说，和学生们在一起，是他最开心、最放松的时光。“学生们都成家立业了，分散在各地。"
+        );
+
+        for (var i = 0; i < 4; i++) {
+            $(".msc_bi_box").eq(0).append(
+                "<span class=\"msc_bi_line\">" +
+                "<span class=\"msc_rarr\"><img src=\"./imgs/rarr1.png\" /></span>" +
+                "<span class=\"msc_bi\">床前明月光，疑是地上霜霜霜" + i + "</span>" +
+                "</span>"
+            );
         }
+
+        for (var i = 0; i < 4; i++) {
+            $(".nsc_bi_box").eq(0).append(
+                "<span class=\"nsc_bi_line\">" +
+                "<span class=\"nsc_rarr\"><img src=\"./imgs/rarr1.png\" /></span>" +
+                "<span class=\"nsc_bi\">床前明月光，疑是地上霜霜霜" + i + "</span>" +
+                "</span>"
+            );
+        }
+
+        for (var i = 0; i < 4; i++) {
+            $(".nsc_bi_box").eq(1).append(
+                "<span class=\"nsc_bi_line\">" +
+                "<span class=\"nsc_rarr\"><img src=\"./imgs/rarr1.png\" /></span>" +
+                "<span class=\"nsc_bi\">床前明月光，疑是地上霜霜霜" + i + "</span>" +
+                "</span>"
+            );
+        }
+
+        $(".content2").eq(0).css("height",
+            $(".n_scholars_box").eq(0).outerHeight() + "px");
+
+        console.log($(".n_scholars_box").eq(0).outerHeight());
+        $(".scholars_box").eq(0).css("height",
+            $(".content2").eq(0).outerHeight() + "px");
+
+        $(".sp_box").eq(0).css("height",
+            $(".content2").eq(0).outerHeight() - 40 + "px");
+
+        for (var i = 0; i < 27; i++) {
+            $(".sp_box").eq(0).append(
+                "<div class=\"sp_card\">" +
+                "<div class=\"sp_img_box\"><img src=\"./imgs/scholar.jpg\" /></div>" +
+                "<span class=\"sp_title\">程泰宁</span></div>"
+            );
+        }
+
+        for (var i = 3; i < 27; i++) {
+            $(".sp_card").eq(i).css("margin-top",
+                ($(".sp_box").eq(0).outerHeight() - ($(".sp_card").eq(0).outerHeight() * 9)) / 8 + "px");
+        }
+
+        $(".contact_box").eq(0).css("height",
+            $(".partner_branch_box").eq(0).outerHeight() + "px");
+
+        for (var i = 0; i < $(".partner_card").length; i++) {
+            $(".partner_card").eq(i).css("margin",
+                "0 " + ($(".prow1").outerWidth() - 7 * ($(".partner_card").outerWidth())) / 8 + "px");
+
+            console.log(($(".prow1").eq(0).outerHeight() - $(".partner_card").eq(i).children("a").children("img").outerHeight()) / 2);
+            // $(".partner_card").eq(i).children("img.1").css("background-color", "red");
+            $(".partner_card").eq(i).children("a").children("img").css("margin-top",
+                ($(".prow1").eq(0).outerHeight() - $(".partner_card").eq(i).children("a").children("img").outerHeight()) / 2 + "px");
+        }
+
+        for (var i = 0; i < 3; i++) {
+            $(".fi_box").eq(i).children("img").css("margin",
+                ($(".fi_box").eq(i).outerHeight() - $(".fi_box").eq(i).children("img").outerHeight()) / 2 + "px " +
+                ($(".fi_box").eq(i).outerWidth() - $(".fi_box").eq(i).children("img").outerWidth()) / 2 + "px");
+        }
+
     }
 
-    var t = 6000;
 
-    var cycle_img_box = document.getElementsByClassName("cycle_img_box")[0];
-    cycle_img_box.timer = setInterval(function () {
-        btn_right.click();
-    }, t);
-
-    cycle_img_box.onmouseover = function () {
-        clearInterval(cycle_img_box.timer);
-    }
-
-    cycle_img_box.onmouseout = function () {
-        cycle_img_box.timer = setInterval(function () {
-            btn_right.click();
-        }, t);
-    }
-
-    // var spCards = document.getElementsByClassName("sp_card");
-    // console.log(spCards.length);
-    // var _top = 38.5;
-
-    // for (var i = 3; i < spCards.length; i += 3) {
-    //     spCards[i].style.marginTop = _top + "px";
-    //     spCards[i + 1].style.marginTop = _top + "px";
-    //     spCards[i + 2].style.marginTop = _top + "px";
-    // }
-
-
-    var logoBox = document.getElementsByClassName("partner_card");
-    var logo=[];
-
-    for(var i=0;i<logoBox.length;i++){
-        logo[i]=logoBox[i].getElementsByTagName("img")[0];
-        logo[i].style.marginTop = (Dis2Num(window.getComputedStyle(logoBox[0]).height) - logo[i].offsetHeight) / 2 + "px";
-    }
-}
-
-function Dis2Num(dis) {
-    return dis.split("px")[0];
-}
+);

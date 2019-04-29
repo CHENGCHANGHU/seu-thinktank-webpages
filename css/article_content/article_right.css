@@ -53,6 +53,7 @@
     cursor: pointer;
 }
 .new_now{
+    /*margin-bottom: 15px;*/
     float: left;
     width: 100%;
 }

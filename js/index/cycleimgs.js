@@ -1,10 +1,14 @@
 $(function () {
-    var bullNum = 6;
+    console.log('cycleimgsObjects.length:' + cycleimgsObjects.length);
+    $('#time').html(cycleimgsObjects[0].imgTime);
+    $('#title').html(cycleimgsObjects[0].imgTitle);
+
+    var bullNum = cycleimgsObjects.length;
     var bullBoxWidth = $(".bull_box").get(0).offsetWidth;
 
-    var curr = bullNum - 1;
-
     for (var i = 0; i < bullNum; i++) {
+        $("#imgBox").append("<img class=\"_c\" src=\"" + cycleimgsObjects[i].imgSrc + "\" />");
+
         $(".bull_box").append("<span class=\"bull\"><span></span></span>");
         $(".bull:nth-child(" + (i + 1) + ")").css("left", (bullBoxWidth - bullNum * 10) / 7 * (i + 1) + "%");
         $(".bull")[i].index = i;
@@ -13,45 +17,11 @@ $(function () {
             console.log(this.index);
             // console.log(i);
             console.log($("._c").get(this.index).src);
-
-            // var topsrc = $("._c").get(curr).src;
-            // var clicksrc = $("._c").get(this.index).src;
-            // var bgsrc = $("._c").get(curr - 1).src;
-
-            // $("._c").eq(this.index).attr('src', bgsrc);
-            // $("._c").eq(curr - 1).attr('src', topsrc);
-            // $("._c").eq(curr).attr('src', clicksrc);
-
-            // $("._c").eq(curr).hide();
-
-            // tab(this.index, curr);
         });
     }
 
-    // tab(0);
-
-    // function clear(x) {
-    //     for (var i = 0; i < bullNum; i++) {
-    //         $('._c').eq(i).hide();
-    //     }
-    //     $('._c').eq(x).show();
-    // }
-
-    // function tab(x) {
-    //     if (x == curr) return;
-
-    //     // startMove(imgs[x], { 'opacity': 100 });
-    //     $('._c').eq(x).show();
-    //     // startMove(imgs[now], { 'opacity': 0 });
-    //     $('._c').eq(curr).hide();
-
-    //     curr = x;
-    //     clear(curr, 6);
-    // }
-
     var imgs = document.getElementsByClassName("_c");
     var bulls = document.getElementsByClassName("bull");
-    console.log(bulls.length);
 
     var now = 0;
 
@@ -100,6 +70,8 @@ $(function () {
         // imgs[now].style.zIndex = 0;
         imgs[now].style.opacity = 0;
         now = x;
+        $('#time').html(cycleimgsObjects[now].imgTime);
+        $('#title').html(cycleimgsObjects[now].imgTitle);
         clear(now);
     }
 

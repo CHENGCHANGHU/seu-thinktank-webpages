@@ -147,6 +147,10 @@
     /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
+.main-card{
+    background-color: rgba(222, 230, 235, 0.4);
+}
+
 .main-img-box {
     display: block;
     width: 100%;
@@ -185,7 +189,7 @@
 
 .main-title-box a {
     color: #353535;
-    font-size: 16pt;
+    font-size: 14pt;
     line-height: 30px;
 }
 

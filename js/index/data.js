@@ -55,7 +55,7 @@ var activityObjects = [
 var mediaPublished = [
     {
         src: './imgs/index/news4.jpg',
-        title: '我后悔了！我不要出来玩了!我要回家！！！',
+        title: '我后悔了！我不要出来玩了!我要回我要回我要回家！！！',
         mainSrc: 'SEU-ThinkTank',
         time: '05/03 14:56'
     },
@@ -70,7 +70,7 @@ var mediaPublished = [
 var thinkTankReprort = [
     {
         src: './imgs/index/news6.jpg',
-        title: '我后悔了！我不要出来玩了!我要回家！！！',
+        title: '张旭东：五四新文化的深层结构性转换——浅论白话革命的伟大意义',
         mainSrc: 'SEU-ThinkTank',
         time: '05/03 14:56'
     },
@@ -106,7 +106,7 @@ var theoryResearch = [
 var silkroad = [
     {
         src: './imgs/index/news10.jpg',
-        title: '我后悔了！我不要出来玩了!我要回家！！！',
+        title: '常熟万达广场内两店员工起冲突致多人受伤 15人被刑拘',
         mainSrc: 'SEU-ThinkTank',
         time: '05/03 14:56'
     },

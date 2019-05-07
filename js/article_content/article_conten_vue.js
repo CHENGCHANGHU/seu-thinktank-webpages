@@ -14,22 +14,26 @@ new Vue({
             'font_size_normal':true
         },
         right_title_list:[
-            {title:'东南大学事情111',time:'2019-03-29'},
-            {title:'东南大学事情222222',time:'2019-03-29'},
-            {title:'东南大学事情33333333',time:'2019-03-29'},
-            {title:'东南大学事情44444444',time:'2019-03-29'},
-            {title:'东南大学事情55555555',time:'2019-03-29'}
+            {title:'东南大学事情111',time:'2019-03-29',img_src:"./imgs/article_content/news1.jpg"},
+            {title:'东南大学事情222222',time:'2019-03-29',img_src:"imgs/article_content/news2.jpg"},
+            {title:'东南大学事情33333333',time:'2019-03-29',img_src:"imgs/article_content/news3.jpg"},
+            {title:'东南大学事情44444444',time:'2019-03-29',img_src:"imgs/article_content/news4.jpg"},
+            {title:'东南大学事情55555555',time:'2019-03-29',img_src:"imgs/article_content/news7.jpg"}
         ],
-        right_title_list_1:[
-            {title:'东南大学事情111',time:'阅读1000'},
-            {title:'东南大学事情222222',time:'阅读900'},
-            {title:'东南大学事情33333333',time:'阅读800'},
-            {title:'东南大学事情111',time:'阅读1000'},
-            {title:'东南大学事情222222',time:'阅读900'},
-            {title:'东南大学事情33333333',time:'阅读800'},
-            {title:'东南大学事情111',time:'阅读1000'},
-            {title:'东南大学事情222222',time:'阅读900'},
-            {title:'东南大学事情33333333',time:'阅读800'}
+        right_author_name:[
+            {name:"程泰宁",img_src:"./imgs/article_content/scholar.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar1.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar2.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar3.jpg"},
+            {name:"程泰宁",img_src:"./imgs/article_content/scholar.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar1.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar2.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar3.jpg"},
+            {name:"程泰宁",img_src:"./imgs/article_content/scholar.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar1.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar2.jpg"},
+            {name:"程泰宁",img_src:"./imgs/article_content/scholar.jpg"},
+            {name:"YannLeCun",img_src:"./imgs/article_content/scholar3.jpg"},
         ],
         share:[
             {pic_src:"imgs/article_content/qq.png",color:"#f06466"},
@@ -44,11 +48,11 @@ new Vue({
             {title:"今年最佳扣篮，可能属于这名16岁男孩",time:"2016-11-23"},
         ],
         recoment_title_content:[
-            {title:"禁止来台宣扬“一国两制”，蔡英文又筑新墙",time:"2019-04-17 17:13"},
-            {title:"搬砖的安全帽不如领导？应急管理部回应",time:"2019-04-17 17:13"},
-            {title:"偷摸国宝惹众怒 她回应：是熊猫宝宝越狱成功兼碰瓷",time:"2019-04-17 17:13"},
-            {title:"用种地攒的钱“发烧”天文 这个农民好酷",time:"2019-04-17 17:13"},
-            {title:"“马背上建校”的石河子大学，如今同层换教室要走8分钟",time:"2019-04-17 17:13"},
+            {title:"禁止来台宣扬“一国两制”，蔡英文又筑新墙",time:"2019-04-17 17:13",img_src:"imgs/article_content/news1.jpg"},
+            {title:"搬砖的安全帽不如领导？应急管理部回应",time:"2019-04-17 17:13",img_src:"imgs/article_content/news2.jpg"},
+            {title:"偷摸国宝惹众怒 她回应：是熊猫宝宝越狱成功兼碰瓷",time:"2019-04-17 17:13",img_src:"imgs/article_content/news3.jpg"},
+            {title:"用种地攒的钱“发烧”天文 这个农民好酷",time:"2019-04-17 17:13",img_src:"imgs/article_content/news4.jpg"},
+            {title:"“马背上建校”的石河子大学，如今同层换教室要走8分钟",time:"2019-04-17 17:13",img_src:"imgs/article_content/news7.jpg"},
         ]
     },
     methods:{

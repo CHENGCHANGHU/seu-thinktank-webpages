@@ -7,85 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./imgs/seu.jpg" rel="shortcut icon" type="image/*" />
     <link href="css/article_content/article_content.css" rel="stylesheet" type="text/css" />
-    <link href="css/article_content/copyright.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/article_content/copyright.css" rel="stylesheet" type="text/css" />-->
     <link href="css/article_content/article_right.css" rel="stylesheet" type="text/css" />
-    <link href="css/article_content/nav.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/article_content/nav.css" rel="stylesheet" type="text/css" />-->
+    <link href="css/general/copyright.css" rel="stylesheet" type="text/css"/>
+    <link href="css/general/global.css" rel="stylesheet" type="text/css"/>
+    <link href="css/general/nav.css" rel="stylesheet" type="text/css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="./js/article_content/article_content.js"></script>
-
+    <!--<script type="text/javascript" src="./js/article_content/article_content.js"></script>-->
+    <script type="text/javascript" src="./js/general/nav.js"></script>
 
 </head>
 
 <body>
     <div id="vue_div">
-        <nav class="nav_webpage">
-        <!-- 导航栏 东南大学图标 -->
-        <div class="nav_container">
-            <div class="logo_box">
-                <img class="logo" draggable="true" src="./imgs/logo.png" title="东南大学" alt="东南大学 Southeast University" />
-            </div>
-
-            <!--   导航栏 网站主标题   -->
-            <div class="title_box">
-                <!-- 网站的标题 -->
-                <div class="top_titles">
-                    <h1><span>东大战略智库</span></h1>
-                    <h2><span class="tip_outer"><span class="tip_end">院</span><span
-                            class="tip_inner">东南大学文化传媒与国际战略研究</span></span></h2>
+        <!-- 导航栏 -->
+        <div class="nax-box">
+            <div class="nav-container">
+                <div class="top-title-box">
+                    <div class="logo-box">
+                        <img src="./imgs/index/logo.png" />
+                    </div>
+                    <div class="thinktank-box">
+                        <span class="thinktank">东南大学智库</span></div>
+                    <div class="breif-intro-box">
+                        <span class="breif-intro">全球视野</span>
+                        <span class="breif-intro">中国情怀</span>
+                        <span class="breif-intro">学术研究</span>
+                        <span class="breif-intro">决策参考</span>
+                    </div>
                 </div>
-
-                <!-- 内容简介标题 -->
-                <div class="bottom_phrases">
-                    <ul class="content_phrase_box">
-                        <li class="content_phrase">一带一路</li>
-                        <li class="content_phrase">国际热点</li>
-                        <li class="content_phrase">大国关系</li>
-                        <li class="content_phrase">周边安全</li>
-                        <li class="content_phrase">世界经济</li>
-                        <li class="content_phrase">国际贸易</li>
-                        <li class="content_phrase">创新发展</li>
-                        <li class="content_phrase">文化传媒</li>
-                        <li class="content_phrase">网络强国</li>
+                <span class="split-line"></span>
+                <div class="bottom-link-box">
+                    <ul class="link_title_container">
+                        <li class="link_title"><a href="./index.html">首页</a></li>
+                        <li class="link_title"><a href="#">智库活动</a></li>
+                        <li class="link_title"><a href="#">智库报告</a></li>
+                        <li class="link_title"><a href="#">媒体发表</a></li>
+                        <li class="link_title"><a href="#">专家学者</a></li>
+                        <li class="link_title"><a href="#">国际交流</a></li>
+                        <li class="link_title"><a href="#">欢迎加入</a></li>
+                        <li class="link_title"><a href="#">招聘实习</a></li>
+                        <li class="link_title"><a href="#">关于我们</a></li>
+                        <li class="link_title"><a href="#">联系我们</a></li>
                     </ul>
                 </div>
             </div>
-
-
-            <!-- 网站简介标题 -->
-            <div class="subtitle_box">
-                <div class="top_2">
-                    <span>全球视野</span>
-                    <span>中国情怀</span>
-                </div>
-                <div class="bottom_2">
-                    <span>学术研究</span>
-                    <span>决策参考</span>
-                </div>
-                <div class="search_box">
-                    <input type="text" placeholder="搜索" class="search_text" />
-                    <div class="search_btn_box"><img class="search_btn" src="./imgs/search1.png" /></div>
-                </div>
-            </div>
         </div>
-    </nav>
-        <div class="link_title_box">
-            <ul class="link_title_container">
-                <li class="link_title"><a href="#">首页</a></li>
-                <li class="link_title"><a href="#">智库活动</a></li>
-                <li class="link_title"><a href="#">智库报告</a></li>
-                <li class="link_title"><a href="#">媒体发表</a></li>
-                <li class="link_title"><a href="#">专家学者</a></li>
-                <li class="link_title"><a href="#">智能媒体</a></li>
-                <li class="link_title"><a href="#">国际交流</a></li>
-                <li class="link_title"><a href="#">欢迎加入</a></li>
-                <li class="link_title"><a href="#">招聘实习</a></li>
-                <li class="link_title"><a href="#">关于我们</a></li>
-                <li class="link_title"><a href="#">联系我们</a></li>
-            </ul>
-        </div>
-        <hr>
         <div class="main_box" id="main_box">
             <article class="left_article">
                 <div class="article_title_div">
@@ -149,14 +119,14 @@
                 </div>
 
                 <div style="float: left;margin-top: 40px;width: 100%">
-                    <div style="font-size: 15pt;font-weight: bolder;text-align: left">小编最近文章</div>
+                    <div style="font-size: 15pt;font-weight: bolder;text-align: left">作者最近文章</div>
                     <div style="float: left;width: 100%;margin-top: 10px" v-for="item in recoment_title_author">
                         <div class="recoment_title_author">{{item.title}}</div><div style="float: right;color: #bfbfbf">{{item.time}}</div>
                     </div>
                     <div style="width: 100%;margin-top: 30px;float: left" >
                         <div style="font-size: 15pt;font-weight: bolder;text-align: left;margin-bottom: 15px">相关推荐</div>
                         <span class="new_now" v-for="title_object in recoment_title_content" >
-                            <img src="./imgs/news7.jpg" style="float:left;width: 160px;height: 100px">
+                            <img :src="title_object['img_src']" style="float:left;width: 160px;height: 100px">
                             <div style="float: left;height: 100px;width: 70%;margin-left: 10px">
                                 <div style="position: absolute;top: 0;text-align: left;font-weight:bolder ;font-size: 16px">{{title_object.title}}</div>
                                 <div style="position: absolute;bottom: 0;text-align: left;font-size: 14px;color: #a4a4a4">{{title_object.time}}</div>
@@ -179,7 +149,7 @@
                 </div>
                 <div style="width: 100%" id="right_title_vue">
                     <span class="new_now" v-for="title_object in right_title_list" >
-                        <img src="./imgs/news7.jpg" style="float:left;width: 90px;height: 60px">
+                        <img :src="title_object['img_src']" style="float:left;width: 90px;height: 60px">
                         <div style="float: left;height: 60px;width: 232px;margin-left: 10px">
                             <div style="position: absolute;top: 0;text-align: left;font-weight:bolder ;font-size: 16px">{{title_object.title}}</div>
                             <div style="position: absolute;bottom: 0;text-align: left;font-size: 14px;color: #a4a4a4">{{title_object.time}}</div>
@@ -193,62 +163,41 @@
                     <div class="right_more">更多</div>
                 </div>
                 <div style="width: 100%" id="right_title_vue_1">
-                    <div class="sp_card"  v-for="title_object in right_title_list_1">
+                    <div class="sp_card"  v-for="title_object in right_author_name">
                         <div class="sp_img_box">
-                            <img src="./imgs/scholar.jpg" />
+                            <img :src="title_object['img_src']"/>
                         </div>
-                        <span class="spd_title">程泰宁</span>
+                        <span class="spd_title">{{title_object['name']}}</span>
                     </div>
                 </div>
             </aside>
 
         </div>
 
+        <!-- 版权栏 -->
         <div class="copyright">
             <div class="copyright_container">
                 <div class="col1_box">
+                <span class="copyright_label">
+                    Copyright &copy; Southeast University E-mail:master@seu.edu.cn
+                </span>
                     <span class="copyright_label">
-                        Copyright &copy; Southeast University E-mail:master@seu.edu.cn
-                    </span>
+                    苏ICP备10088665号
+                </span>
                     <span class="copyright_label">
-                        苏ICP备10088665号
-                    </span>
-                    <span class="copyright_label">
-                        公安备案号：32010202010062
-                    </span>
+                    公安备案号：32010202010062
+                </span>
                 </div>
 
-                <div class="col2_box">
-                    <span class="copyright_label">
-                        东南大学文化传媒研究院
-                    </span>
-                    <span class="copyright_label">
-                        南京市玄武区、南京市江宁区东南大学路、南京市鼓楼区湖南路
-                    </span>
-                    <span class="copyright_label">
-                        联系：(025)83795903、13912970636（王）
-                    </span>
-                </div>
 
-                <div class="col3_box">
-                    <span class="copyright_label">
-                        东南大学文化传媒与国际战略研究院
-                    </span>
-                    <span class="copyright_label">
-                        江苏省南京市东南大学
-                    </span>
-                    <span class="copyright_label">
-                        联系：(025)83795903、13912970636（王）
-                    </span>
-                </div>
 
                 <div class="forward_box">
                     <div class="icon_box">
-                        <img src="./imgs/blog.png" />
+                        <img src="./imgs/index/blog.png" />
                     </div>
 
                     <div class="icon_box">
-                        <img src="./imgs/wechat.png" />
+                        <img src="./imgs/index/wechat.png" />
                     </div>
                 </div>
             </div>

@@ -18,13 +18,13 @@
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <!--<script type="text/javascript" src="./js/article_content/article_content.js"></script>-->
     <script type="text/javascript" src="./js/general/nav.js"></script>
-
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
     <div id="vue_div">
         <!-- 导航栏 -->
-        <div class="nax-box">
+        <div class="nax-box" id="nav_box">
             <div class="nav-container">
                 <div class="top-title-box">
                     <div class="logo-box">
@@ -85,9 +85,9 @@
                         </div>
                         <div class="article_size">
                             <span id="font_name">字号：</span>
-                            <div id="font_small" v-on:click="font_small">A-</div>
-                            <div id="font_normal" v-on:click="font_normal">A</div>
-                            <div id="font_big" v-on:click="font_big">A+</div>
+                            <div id="font_small" v-on:click="font_small()">A-</div>
+                            <div id="font_normal" v-on:click="font_normal()">A</div>
+                            <div id="font_big" v-on:click="font_big()">A+</div>
                         </div>
                         <div class="article_from">
                             来源：观察者网
@@ -103,10 +103,10 @@
                     </div>
                     <div id="article_content" style="float: left">
                     <span v-bind:class="article_font_size">
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;物联网是世界信息产业的第三次浪潮，在国际金融危机的因美中蓬勃发展，目前世界上越来越多的国家和地区，已经将发展物联网确定为培育核心竞争力的战略重点。两年多前，温家宝总理在无锡视察时发表了重要的讲话，开启了中国物联网的发展新纪元。一年前，新华社作为主办方之一，与国家相关部委和江苏省人民政府、无锡市人民政府共同主办首届中国国际物联网(传感网)博览会，一年后我们重聚在无锡，今天会场与去年有所不同，但是感到非常的有创意和新意。</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们以应用让物联网从概念走向现实为主题，走进物联网创新发展的成果，探讨物联网商业应用的模式和发展的趋势，是一件很有意义的事情。相信本次博览会将对中国物联网的发展起到积极的促进和作用。两年来中国物联网发展你追我赶，我国物联网发展日新月异，显示出勃勃生机，作为中国国家通讯社和世界级通讯社，新华社正在着力建设国际一流的现代()机构，对包括物联网在内的新技术、新应用、新发展，一直进行着密切的跟踪和研究。从去年到今年参加这个会议的时候，经常有政府部门、研究机构在问为什么新华社来参加物联网，你们是不是物联网研究机构，我们的回答是是也不是。毫无疑问，我们和专业的部门相比，专门的政府相比，我们不是专门研究物联网的，但是大家可能注意到一个现象，无论是在中国还是世界，我们在谈论物联网有很多很多的人，有很多很多的地方、企业、机构，更有个人在研究，也有很多人在研究这就是物联网的基地，那就是物联网的企业，他推出的就是物联网的概念，但是所有人都说它是物联网的时候，这是否是物联网就成为了疑问。</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么新华社作为传媒机构，我们作为媒体，我们赋有我们的责任，我们应该负责任的把我们社会上，国际、国内的真正优秀的物联网企业，真正成熟的物联网技术推向市场，就像这次大会的主题所说的，我们要把概念推向应用。如果不能成为应用，这个物联网恐怕所起的作用就不会这么大。正因为如此，我们在中国举办这么多的物联网论坛和其他活动的时候，我们在发现这么多物联网的企业，都在说他们是物联网企业的时候，我们为什么每年都要到无锡来，积极的参加这样一个活动，我们就是要积极的落实总理的指示精神，我们深深感到无锡作为中国物联网的基地，它有着独特的优势。这两年产业的发展我们也坚定的支持这个地方的物联网发展。</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么新华社作为传媒机构，我们作为媒体，我们赋有我们的责任，我们应该负责任的把我们社会上，国际、国内的真正优秀的物联网企业，真正成熟的物联网技术推向市场，就像这次大会的主题所说的，我们要把概念推向应用。如果不能成为应用，这个物联网恐怕所起的作用就不会这么大。正因为如此，我们在中国举办这么多的物联网论坛和其他活动的时候，我们在发现这么多物联网的企业，都在说他们是物联网企业的时候，我们为什么每年都要到无锡来，积极的参加这样一个活动，我们就是要积极的落实总理的指示精神，我们深深感到无锡作为中国物联网的基地，它有着独特的优势。这两年产业的发展我们也坚定的支持这个地方的物联网发展。</p>
+                        <p v-bind:class="article_font_size">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;物联网是世界信息产业的第三次浪潮，在国际金融危机的因美中蓬勃发展，目前世界上越来越多的国家和地区，已经将发展物联网确定为培育核心竞争力的战略重点。两年多前，温家宝总理在无锡视察时发表了重要的讲话，开启了中国物联网的发展新纪元。一年前，新华社作为主办方之一，与国家相关部委和江苏省人民政府、无锡市人民政府共同主办首届中国国际物联网(传感网)博览会，一年后我们重聚在无锡，今天会场与去年有所不同，但是感到非常的有创意和新意。</p>
+                        <p v-bind:class="article_font_size">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们以应用让物联网从概念走向现实为主题，走进物联网创新发展的成果，探讨物联网商业应用的模式和发展的趋势，是一件很有意义的事情。相信本次博览会将对中国物联网的发展起到积极的促进和作用。两年来中国物联网发展你追我赶，我国物联网发展日新月异，显示出勃勃生机，作为中国国家通讯社和世界级通讯社，新华社正在着力建设国际一流的现代()机构，对包括物联网在内的新技术、新应用、新发展，一直进行着密切的跟踪和研究。从去年到今年参加这个会议的时候，经常有政府部门、研究机构在问为什么新华社来参加物联网，你们是不是物联网研究机构，我们的回答是是也不是。毫无疑问，我们和专业的部门相比，专门的政府相比，我们不是专门研究物联网的，但是大家可能注意到一个现象，无论是在中国还是世界，我们在谈论物联网有很多很多的人，有很多很多的地方、企业、机构，更有个人在研究，也有很多人在研究这就是物联网的基地，那就是物联网的企业，他推出的就是物联网的概念，但是所有人都说它是物联网的时候，这是否是物联网就成为了疑问。</p>
+                        <p v-bind:class="article_font_size">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么新华社作为传媒机构，我们作为媒体，我们赋有我们的责任，我们应该负责任的把我们社会上，国际、国内的真正优秀的物联网企业，真正成熟的物联网技术推向市场，就像这次大会的主题所说的，我们要把概念推向应用。如果不能成为应用，这个物联网恐怕所起的作用就不会这么大。正因为如此，我们在中国举办这么多的物联网论坛和其他活动的时候，我们在发现这么多物联网的企业，都在说他们是物联网企业的时候，我们为什么每年都要到无锡来，积极的参加这样一个活动，我们就是要积极的落实总理的指示精神，我们深深感到无锡作为中国物联网的基地，它有着独特的优势。这两年产业的发展我们也坚定的支持这个地方的物联网发展。</p>
+                        <p v-bind:class="article_font_size">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么新华社作为传媒机构，我们作为媒体，我们赋有我们的责任，我们应该负责任的把我们社会上，国际、国内的真正优秀的物联网企业，真正成熟的物联网技术推向市场，就像这次大会的主题所说的，我们要把概念推向应用。如果不能成为应用，这个物联网恐怕所起的作用就不会这么大。正因为如此，我们在中国举办这么多的物联网论坛和其他活动的时候，我们在发现这么多物联网的企业，都在说他们是物联网企业的时候，我们为什么每年都要到无锡来，积极的参加这样一个活动，我们就是要积极的落实总理的指示精神，我们深深感到无锡作为中国物联网的基地，它有着独特的优势。这两年产业的发展我们也坚定的支持这个地方的物联网发展。</p>
                     </span>
                     </div>
                     <div style="width: 100%;float: left;height: 40px;margin-top: 10px">
@@ -138,7 +138,7 @@
                     </div>
 
                 </article>
-                <aside class="right_article">
+                <aside class="right_article" id="right_article">
                     <!--<div class="right_search">-->
                     <!--<input class="right_search_input_text" type="text" placeholder="请输入关键字" >-->
                     <!--<button class="right_search_button">搜索</button>-->
@@ -158,17 +158,19 @@
 
                     </span>
                     </div>
-                    <hr style="width: 100%;height: 2px;margin-top: 20px;float: left;background-color: #588ed4">
-                    <div class="right_title_border">
-                        <div class="right_title">专家学者</div>
-                        <div class="right_more">更多</div>
-                    </div>
-                    <div style="width: 100%" id="right_title_vue_1">
-                        <div class="sp_card"  v-for="title_object in right_author_name">
-                            <div class="sp_img_box">
-                                <img :src="title_object['img_src']"/>
+                    <div id="fixPara" style="float: left;">
+                        <hr style="width: 100%;height: 2px;margin-top: 20px;float: left;background-color: #588ed4">
+                        <div class="right_title_border">
+                            <div class="right_title">专家学者</div>
+                            <div class="right_more">更多</div>
+                        </div>
+                        <div style="width: 100%" id="right_title_vue_1">
+                            <div class="sp_card"  v-for="title_object in right_author_name">
+                                <div class="sp_img_box">
+                                    <img :src="title_object['img_src']"/>
+                                </div>
+                                <span class="spd_title">{{title_object['name']}}</span>
                             </div>
-                            <span class="spd_title">{{title_object['name']}}</span>
                         </div>
                     </div>
                 </aside>

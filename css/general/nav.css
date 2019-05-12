@@ -24,17 +24,12 @@
 .split-line {
     display: block;
     width: 100%;
-    /* left: 5%; */
-    /* margin-bottom: 5px; */
-    /* height: 5px; */
-    /* background-color: rgba(23, 70, 25); */
 }
 
 .bottom-link-box {
     width: 90%;
     left: 5%;
     height: 35px;
-    /* background-color: rgba(41, 65, 13, 0.4); */
 }
 
 /* *************************************************** */
@@ -130,6 +125,7 @@
     display: inline-block;
     background-color: rgba(58, 73, 50, 0.4);
     border-radius: 30px;
+    color: #fff;
 }
 
 .link_title a:hover {

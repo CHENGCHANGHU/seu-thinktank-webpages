@@ -4,7 +4,7 @@
     position: relative;
     /* float: left; */
     font-family: "微软雅黑";
-    font-size: 12pt;
+    /* font-size: 12pt; */
     font-weight: normal;
     /* font-size: 0; */
     /* -webkit-text-size-adjust: none; */
@@ -13,7 +13,7 @@
 li, a {
     text-decoration: none;
     list-style-type: none;
-    color: #fff;
+    /* color: #fff; */
     display: inline;
 }
 
@@ -22,7 +22,7 @@ a:hover{
 }
 
 html {
-    font-size: 0;
+    /* font-size: 0; */
     width: 100%;
     background-color: rgb(236, 246, 253);
     /* background-color: rgba(231, 250, 253, 0.288); */

@@ -12,20 +12,20 @@ li, a {
 html {
     width: 100%;
     height: auto;
-    /* text-align: center; */
+    /*text-align: center;*/
 }
 
 body {
     width: 100%;
     /* display: inline-block; */
     background-color: rgb(255, 255, 255);
-    text-align: center;
+    /*text-align: center;*/
 }
 
 /*.main_box, .top_nav {*/
 .main_box{
     display: inline-block;
-    width: 1280px;
+    width: 1200px;
     height: auto;
     background-color: rgb(255, 255, 255);
 }
